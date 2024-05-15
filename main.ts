@@ -1,9 +1,5 @@
 basic.forever(function () {
-    basic.showLeds(`
-        . # # # .
-        # . . . #
-        # # # # #
-        . . # . .
-        . # . # .
-        `)
+    basic.showNumber(input.temperature())
+    basic.clearScreen()
+    basic.pause(1000)
 })
