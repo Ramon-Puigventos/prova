@@ -1,5 +1,19 @@
 basic.forever(function () {
-    basic.showNumber(input.temperature())
-    basic.clearScreen()
-    basic.pause(1000)
+    if (input.temperature() < 28) {
+        basic.showLeds(`
+            # . # . #
+            . # # # .
+            # # # # #
+            . # # # .
+            # . . . #
+            `)
+    } else {
+        basic.showLeds(`
+            . . . . .
+            . # . # .
+            # . . . #
+            . # . # .
+            . . # . .
+            `)
+    }
 })
